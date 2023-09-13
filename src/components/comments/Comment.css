@@ -1,0 +1,33 @@
+.comment_input {
+    padding: 5px 10px;
+    display: flex;
+    gap: 9px;
+    align-items: center;
+}
+
+.comment_input img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.comment_input input {
+    width: 100%;
+    min-height: auto;
+    padding: 10px;
+    max-height: 50px;
+    overflow: auto;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #bdbdbd;
+}
+
+.comment_input svg {
+    width: 24px;
+    height: 24px;
+}
+
+.comment-text {
+    font-size: 12px;
+}

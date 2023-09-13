@@ -1,0 +1,46 @@
+html {
+  scroll-snap-type: y mandatory;
+}
+
+.App {
+  background-color: rgb(26, 25, 25);
+}
+
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  position: relative;
+}
+
+.video-wrapper h3 {
+  color: #fff;
+  margin-top: 0;
+}
+
+.video-container {
+  height: 70vh;
+  width: 100%;
+  max-width: 350px;
+  overflow: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.video-container::-webkit-scrollbar {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .video-wrapper h3 {
+    display: none;
+  }
+  .video-container {
+    height: 100vh;
+    max-width: 100%;
+  }
+  .reels {
+    width: 100%;
+  }
+}

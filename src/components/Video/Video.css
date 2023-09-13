@@ -1,0 +1,34 @@
+.video-cards {
+  position: relative;
+  height: 70vh;
+}
+
+.video-player {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  scroll-snap-align: start;
+  object-fit: cover;
+}
+
+.mute-button {
+  position: absolute;
+  top: calc(50% - 15px);
+  font-size: 30px;
+  width: 30px;
+  left: calc(50% - 15px);
+  color: #fff;
+  line-height: 1;
+  height: 30px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .video-cards {
+    height: 100vh;
+  }
+
+  .video-player {
+    border-radius: 0;
+  }
+}
